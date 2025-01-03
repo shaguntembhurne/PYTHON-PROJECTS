@@ -1,4 +1,4 @@
-# Expense Tracker Documentation
+# Expense Tracker
 
 ## Overview
 This is a simple **Expense Tracker** application using **Python, Tkinter, and SQLite**. It allows users to **log expenses** with an amount, category, and description, and displays the recorded expenses in a GUI.
@@ -8,7 +8,7 @@ This is a simple **Expense Tracker** application using **Python, Tkinter, and SQ
 - **Store Data in SQLite:** The expenses are stored in a SQLite database (`expense.db`).
 - **Display Expenses:** The GUI dynamically loads and displays recorded expenses.
 
-## Dependencies
+## Installation
 Ensure you have the following dependencies installed:
 ```bash
 pip install tk
@@ -18,16 +18,15 @@ pip install tk
 ## Database Schema
 A table named `expenses` is created if it does not exist, with the following structure:
 
-| Column    | Data Type  | Description |
-|-----------|-----------|-------------|
-| id        | INTEGER (Primary Key) | Auto-incremented ID |
-| amount    | TEXT      | Expense amount |
-| category  | TEXT      | Expense category |
+| Column      | Data Type  | Description |
+|------------|-----------|-------------|
+| id         | INTEGER (Primary Key) | Auto-incremented ID |
+| amount     | TEXT      | Expense amount |
+| category   | TEXT      | Expense category |
 | description | TEXT      | Expense details |
-| date      | TEXT      | Timestamp of the expense |
+| date       | TEXT      | Timestamp of the expense |
 
-## Code Breakdown
-
+## Usage
 ### 1. **Database Connection & Table Creation**
 ```python
 conn = sqlite3.connect('expense.db')
@@ -134,6 +133,9 @@ python expense_tracker.py
 - **Category-based Filtering**
 - **Export Data as CSV**
 - **Graphical Analysis using Matplotlib**
+
+## License
+This project is licensed under the MIT License.
 
 ## Conclusion
 This simple **Expense Tracker** helps in recording and managing expenses efficiently using Python, Tkinter, and SQLite. 🚀
